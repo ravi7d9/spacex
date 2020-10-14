@@ -32,7 +32,7 @@ export class SpaceListingComponent implements OnInit {
   checkQueryParams(): void {
     this.route.queryParams.subscribe(params => {
       if (params.limit) {
-        const {limit, land_success, launch_success, launch_year} = params
+        const {limit, land_success, launch_success, launch_year} = params;
         this.defaultLimit = {
           ...this.defaultLimit,
           limit, land_success, launch_success, launch_year
